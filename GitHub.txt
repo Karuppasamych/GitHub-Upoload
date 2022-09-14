@@ -1,0 +1,57 @@
+Upload Project in GitHub
+======================
+Step-1
+
+go to project  folder and right click gitbash --Here
+
+step - 2
+
+type -- ssh-keygen -t rsa -b 4096 -C 'gmail.id'  
+
+--press Enter
+
+--Enter again
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+--press enter
+
+clip < ~/.ssh/id_rsa.pub
+
+--go to github account --click settings -- click ssh and GpG keys 
+
+type title and paste it
+
+--- create  new repo
+
+
+--- go to project folder right click and click git bash here
+
+--- git init
+
+-- git add  .
+
+--- git commit -m "first commit"
+
+--- git remote add origin ___________go to github copy URL and paste it here "https://github.com/Karuppasamych/Router-and-context.git"
+
+--git push origin master
+
+-- refresh the github page 
+
+---! DONE
+
+
+=============================
+GITHub Update files
+
+========
+
+---git status
+
+---git diff 
+--- git add filename
+--- git commit -m 'file updated'
+--- git push origin master
